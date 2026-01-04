@@ -1,0 +1,13 @@
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+mongo-data
+postgres-data
+
+**/target/
+
+
+
