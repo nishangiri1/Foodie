@@ -53,11 +53,12 @@ public class FoodItemServiceImpl implements FoodItemService {
 
 //        RestaurantDto restaurantDto=restaurantService.getById(item.getRestaurantId());
 
-        RestaurantDto restaurantDto= webClient.get()
-                .uri("/api/v1/restaurants/{id}",item.getRestaurantId())
-                .retrieve()
-                .bodyToMono(RestaurantDto.class)
-                .block();
+//        RestaurantDto restaurantDto= webClient.get()
+//                .uri("/api/v1/restaurants/{id}",item.getRestaurantId())
+//                .retrieve()
+//                .bodyToMono(RestaurantDto.class)
+//                .block();
+        RestaurantDto restaurantDto=restaurantService.getById(item.getRestaurantId());
 
         FoodItemDTO dto=mapToDTO(item);
         dto.setRestaurant(restaurantDto);
