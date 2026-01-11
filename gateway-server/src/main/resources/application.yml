@@ -41,4 +41,4 @@ info:
   app:
     name: gateway-server
     description: "this is api gateway for common entry point"
-    version:
+    version: "1.0V"
