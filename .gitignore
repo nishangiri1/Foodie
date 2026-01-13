@@ -6,6 +6,7 @@ out/
 
 mongo-data
 postgres-data
+rabbitmq-data
 
 **/target/
 Foodie-config/

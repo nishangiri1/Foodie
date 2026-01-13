@@ -34,7 +34,7 @@ management:
         include: "*"
   info:
     env:
-      enabled: false
+      enabled: true
 
 info:
   app:
