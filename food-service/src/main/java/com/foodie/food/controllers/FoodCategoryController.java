@@ -2,6 +2,7 @@ package com.foodie.food.controllers;
 
 import com.foodie.food.dtos.FoodCategoryDTO;
 import com.foodie.food.services.FoodCategoryService;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

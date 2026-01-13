@@ -6,7 +6,7 @@ import com.foodie.food.dtos.RestaurantDto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
-@FeignClient(AppConstant.RESTAURANT_SERVICE_NAME)
+@FeignClient(value = AppConstant.RESTAURANT_SERVICE_NAME,fallback = RestaurantServiceFallback.class)
 public interface RestaurantService {
 
     @GetMapping("restaurants/api/v1/restaurants/{restaurantId}")

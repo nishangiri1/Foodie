@@ -38,6 +38,7 @@ public class RestaurantController {
 
     @GetMapping("/{id}")
     public ResponseEntity<RestaurantDto> getRestaurantById(@PathVariable String id) {
+        System.out.println("retried");
         RestaurantDto dto = restaurantService.getById(id);
         return new ResponseEntity<>(dto, HttpStatus.OK);
     }
